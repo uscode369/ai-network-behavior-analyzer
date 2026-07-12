@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-MIT-green)
 # AI-Powered Network Behavior Analyzer
 
 A lightweight, AI-driven system designed to detect anomalous network behavior and uncover potential security threats through behavioral analysis.
