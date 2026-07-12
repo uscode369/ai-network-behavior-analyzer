@@ -1,90 +1,84 @@
-# ai-network-behavior-analyzer
-AI-powered system for detecting network anomalies and behavioral threats
 # AI-Powered Network Behavior Analyzer
 
-## Overview
-
-AI-Powered Network Behavior Analyzer is a lightweight, intelligent system designed to monitor, analyze, and interpret network traffic behavior in real time. Instead of relying solely on signature-based detection, it focuses on identifying unusual patterns and behavioral anomalies that may indicate potential security threats.
-
-This tool is built to operate quietly in the background, providing meaningful insights that system administrators and security tools can rely on without requiring constant manual monitoring.
+A lightweight, AI-driven system designed to detect anomalous network behavior and uncover potential security threats through behavioral analysis.
 
 ---
 
-## Core Features
+## 🔍 Overview
 
-### 1. Behavioral Analysis
+This project focuses on identifying unusual patterns in network traffic rather than relying solely on predefined signatures. It is designed to operate as a quiet, reliable analysis layer that can support security workflows without adding complexity.
 
-Analyzes network traffic patterns over time to understand what “normal” looks like, then detects deviations such as:
-
-* Unusual connection spikes
-* Irregular access patterns
-* Suspicious protocol usage
+Instead of producing raw metrics, the system generates interpretable insights that help understand what is happening inside a network.
 
 ---
 
-### 2. Anomaly Detection (AI-Based)
+## ⚙️ Features
 
-Uses machine learning models to identify:
+* Behavioral analysis of network traffic
+* AI-based anomaly detection using Isolation Forest
+* Detection of suspicious patterns such as:
 
-* Port scanning attempts
-* Brute-force login behavior
-* Sudden traffic bursts (possible DDoS indicators)
-* Unknown or rare communication patterns
-
----
-
-### 3. Insight Generation (Not Just Alerts)
-
-Instead of raw logs, the system generates human-readable insights such as:
-
-* “Abnormal traffic spike detected from a single source”
-* “Pattern resembles reconnaissance activity”
-* “Unusual outbound connections detected”
+  * traffic spikes
+  * abnormal packet distribution
+  * potential scanning behavior
+* Human-readable insights (not just raw logs)
+* Lightweight and modular architecture
 
 ---
 
-### 4. Lightweight & Modular Design
+## 🧠 How It Works
 
-* Easy to integrate into existing environments
-* Works alongside other security tools
-* Designed as a backend analytical engine
-
----
-
-### 5. Real-World Use Case
-
-This tool is intended for:
-
-* Small networks lacking enterprise-grade security
-* Developers building security-aware applications
-* Educational and research environments
-* Anyone needing a simple but intelligent monitoring layer
+1. Collects structured network data (e.g., traffic logs)
+2. Learns normal behavior patterns
+3. Detects deviations using machine learning
+4. Outputs meaningful insights for further analysis
 
 ---
 
-## Why This Project Matters
+## 📁 Project Structure
 
-Modern security threats are increasingly behavior-driven rather than signature-based. Many existing tools are either too heavy or require complex configurations.
-
-This project aims to bridge that gap by providing:
-
-* Simplicity
-* Intelligent detection
-* Practical usability
-
-It is not designed to replace full-scale IDS systems, but to act as a complementary, quietly reliable analysis layer.
+```
+src/        → core logic and AI models  
+data/       → sample datasets  
+models/     → trained models  
+```
 
 ---
 
-## Future Improvements
+## 🚀 Getting Started
 
-* Integration with SIEM tools
-* Real-time dashboard
-* Adaptive learning based on network evolution
-* Threat classification using advanced AI models
+```bash
+pip install -r requirements.txt
+cd src
+python main.py
+```
 
 ---
 
-## Vision
+## 🎯 Use Cases
 
-To build a practical, AI-assisted network analysis tool that operates silently yet effectively — helping users understand what is happening inside their network without overwhelming them with raw data.
+* Lightweight intrusion detection support
+* Educational cybersecurity projects
+* Monitoring small-scale networks
+* Supporting security-aware development
+
+---
+
+## 🔮 Future Plans
+
+* Real-time traffic monitoring
+* Integration with SIEM systems
+* Advanced anomaly detection models
+* API for external integrations
+
+---
+
+## 💡 Vision
+
+To build a practical and intelligent network analysis tool that works quietly in the background while providing meaningful security insights.
+
+---
+
+## 📌 Note
+
+This project is designed as a complementary analysis layer, not a replacement for full-scale IDS systems.
